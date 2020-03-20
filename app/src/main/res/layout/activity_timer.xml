@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimerActivity"
+    android:background="@color/ColorBackground">
+
+
+    <TextView
+        android:id="@+id/timer"
+        android:text="0:00"
+        android:textSize="100sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="100sp"
+        android:textColor="@color/ColorButtons"
+
+        />
+
+
+    <TextView
+        android:id="@+id/rest_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rest time: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/rest_time"
+        app:layout_constraintTop_toBottomOf="@+id/timer"
+        app:layout_constraintBottom_toTopOf="@+id/interval_text"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20sp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintHorizontal_chainStyle="packed"
+
+        />
+
+
+    <TextView
+        android:id="@+id/rest_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0:00"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/interval_time"
+        app:layout_constraintLeft_toRightOf="@+id/rest_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer"
+        android:layout_marginTop="20sp"
+
+        />
+
+    <TextView
+        android:id="@+id/interval_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interval Time: "
+        app:layout_constraintTop_toBottomOf="@id/rest_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/interval_time"
+        app:layout_constraintBottom_toTopOf="@+id/rounds_text"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/interval_time"
+        android:text="0:00"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/interval_text"
+        app:layout_constraintTop_toBottomOf="@id/rest_time"
+        />
+
+    <TextView
+        android:id="@+id/rounds_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rounds Left: "
+        app:layout_constraintTop_toBottomOf="@+id/interval_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/rounds_value"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintHorizontal_chainStyle="packed"
+
+        />
+    <TextView
+        android:id="@+id/rounds_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/interval_time"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/rounds_text"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="100sp"
+        android:text="start"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:padding="20sp"
+        />
+
+    <Button
+        android:id="@+id/end_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="END"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="30sp"
+
+        />
+
+</android.support.constraint.ConstraintLayout>
