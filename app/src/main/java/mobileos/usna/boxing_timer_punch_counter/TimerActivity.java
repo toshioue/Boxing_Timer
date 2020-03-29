@@ -132,11 +132,10 @@ public class TimerActivity extends AppCompatActivity implements TimerListener, V
      */
     private void startTimer(){
 
-        //start music player
-        mp.start();
 
         if(breakTime == false) {
             mp2.start();
+            mp.start();
         }
 
         //create Countdown obj
@@ -159,7 +158,6 @@ public class TimerActivity extends AppCompatActivity implements TimerListener, V
                 if(lastRound == false){
                     if(breakTime == true){
                         //added 1000 mil so that a second can be added to display
-
                         mp2.start();
                         mil = interMil + 1000;
                         breakTime = false;
@@ -168,6 +166,7 @@ public class TimerActivity extends AppCompatActivity implements TimerListener, V
 
                     }else{
                         mp3.start();
+                        mp.pause();
                         mil = restMil;
                         breakTime = true;
                     }

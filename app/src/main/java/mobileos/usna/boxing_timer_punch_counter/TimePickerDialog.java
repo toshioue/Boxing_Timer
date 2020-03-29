@@ -79,7 +79,7 @@ public class TimePickerDialog extends DialogFragment {
         //this setts the seconds wheel to fit the dialog box
         LinearLayout.LayoutParams param = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         secWheel.setLayoutParams(param);
-        secWheel.setMinValue(1);
+        secWheel.setMinValue(0);
         secWheel.setMaxValue(59);
         secWheel.setWrapSelectorWheel(true);
         secWheel.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
