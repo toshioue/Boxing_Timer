@@ -242,7 +242,7 @@ public class TimerActivity extends AppCompatActivity implements TimerListener, V
      * this method is used to decrease the number of rounds and updates TextView
      */
     private void decreaseRounds(){
-        numRounds--;
+        numRounds = numRounds - 1;
         if(numRounds >= 0) {
             rounds.setText(Integer.toString(numRounds));
         }
