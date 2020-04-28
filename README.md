@@ -10,3 +10,5 @@
 
 ## To run:  
 #### download repository and run application on Android Studio. Connect Android Phone to Computer and run application as an emulator.
+
+<img src="Screenshot_1.jpg" alt="img 1" width="220" height="400"> <img src="Sceenshot_2.jpg" alt="img_2" width="220" height="400"> <img src="Screenshot_3.jpg" alt="img_3" width="220" height="400"> 
